@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: "Courier New", monospace;
+            font-size: 24px;
+            padding: 20px;
+        }
+        .loading {
+            display: inline-block;
+            font-weight: bold;
+        }
+        .dot {
+            opacity: 0;
+            animation: blink 1.5s infinite;
+        }
+        .dot:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+        .dot:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+        .dot:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Hacker is Back...</p>
+    <p id="msg1"></p>
+    <p id="msg2"></p>
+    <p id="msg3"></p>
+    <p id="msg4"></p>
+    <p id="msg5"></p>
+    <p id="msg6"></p>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
